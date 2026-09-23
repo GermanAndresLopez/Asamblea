@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Vega · Candidato a la Asamblea del Cesar | Pacto Histórico</title>
+<meta name="description" content="Daniel Vega, candidato a la Asamblea Departamental del Cesar por el Pacto Histórico. Educación, salud, trabajo, seguridad, cultura y campo: Colombia puede, el Cesar también.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Patrones decorativos compartidos (sin degradados) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="patDotsBlue" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#0B6FB8"/>
+    </pattern>
+    <pattern id="patDotsOrange" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#FF8A3D"/>
+    </pattern>
+    <pattern id="patDotsRed" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#D1352E"/>
+    </pattern>
+    <pattern id="patStripesTeal" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="12" fill="#0FA9C4"/>
+    </pattern>
+    <pattern id="patCrossGold" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M4 9h10M9 4v10" stroke="#E8A400" stroke-width="2" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ===================== LOADER ===================== -->
+<div class="loader" id="loader" aria-hidden="true">
+
+  <canvas class="loader__scene" id="loaderCanvas"></canvas>
+
+  <div class="loader__content">
+    <img class="loader__logo-img" src="public/pacto.png" alt="Pacto Histórico · Colombia puede" width="702" height="355">
+    <div class="loader__dashes">
+      <span style="--dc:#F0B429"></span><span style="--dc:#2F7DFF"></span><span style="--dc:#E63946"></span><span style="--dc:#2ECC71"></span><span style="--dc:#B534E0"></span>
+    </div>
+    <p class="loader__caption">"Valledupar nos une, un mejor Cesar sí es posible"</p>
+
+    <div class="loader__spinner" role="status" aria-label="Cargando">
+      <svg viewBox="0 0 44 44">
+        <circle class="loader__spinner-track" cx="22" cy="22" r="18"/>
+        <circle class="loader__spinner-arc" cx="22" cy="22" r="18"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <span class="header__progress" id="headerProgress"></span>
+  <div class="container header__inner">
+    <a href="#inicio" class="brand">
+      <img class="brand__logo" src="public/pacto.png" alt="Pacto Histórico · Colombia puede" width="702" height="355">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <span class="nav__pill" id="navPill" aria-hidden="true"></span>
+      <a href="#inicio" class="nav__link active" data-nav>Inicio</a>
+      <a href="#historia" class="nav__link" data-nav>Mi historia</a>
+      <a href="#propuestas" class="nav__link" data-nav>Propuestas</a>
+      <a href="#territorio" class="nav__link" data-nav>El Cesar</a>
+      <a href="#noticias" class="nav__link" data-nav>Noticias</a>
+      <a href="#contacto" class="nav__link" data-nav>Contacto</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contacto" class="btn btn--primary btn--sm">Conversemos</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Navegación móvil">
+    <a href="#inicio" data-nav>Inicio</a>
+    <a href="#historia" data-nav>Mi historia</a>
+    <a href="#propuestas" data-nav>Propuestas</a>
+    <a href="#territorio" data-nav>El Cesar</a>
+    <a href="#noticias" data-nav>Noticias</a>
+    <a href="#contacto" data-nav>Contacto</a>
+  </nav>
+  <a href="#contacto" class="btn btn--primary" data-nav>Conversemos</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero__decor" aria-hidden="true">
+      <span class="pattern-patch pattern-patch--1"><svg viewBox="0 0 200 200"><rect width="200" height="200" fill="url(#patDotsBlue)"/></svg></span>
+      <span class="pattern-patch pattern-patch--2"><svg viewBox="0 0 200 200"><rect width="200" height="200" fill="url(#patStripesTeal)"/></svg></span>
+      <span class="pattern-patch pattern-patch--3"><svg viewBox="0 0 200 200"><rect width="200" height="200" fill="url(#patDotsOrange)"/></svg></span>
+
+      <!-- Sol vallenato -->
+      <svg class="sun-motif" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="16" fill="#E8A400"/>
+        <g stroke="#FF8A3D" stroke-width="4" stroke-linecap="round">
+          <line x1="50" y1="6" x2="50" y2="20"/>
+          <line x1="50" y1="80" x2="50" y2="94"/>
+          <line x1="6" y1="50" x2="20" y2="50"/>
+          <line x1="80" y1="50" x2="94" y2="50"/>
+          <line x1="19" y1="19" x2="28" y2="28"/>
+          <line x1="72" y1="72" x2="81" y2="81"/>
+          <line x1="81" y1="19" x2="72" y2="28"/>
+          <line x1="28" y1="72" x2="19" y2="81"/>
+        </g>
+      </svg>
+
+      <!-- Acordeón flotante -->
+      <svg class="floaty floaty--1" width="54" height="54" viewBox="0 0 48 48" fill="none">
+        <rect x="10" y="8" width="10" height="32" rx="2" fill="#0B6FB8"/>
+        <rect x="28" y="8" width="10" height="32" rx="2" fill="#D1352E"/>
+        <rect x="19" y="12" width="10" height="6" fill="#FFF"/>
+        <rect x="19" y="20" width="10" height="6" fill="#FFF"/>
+        <rect x="19" y="28" width="10" height="6" fill="#FFF"/>
+        <circle cx="15" cy="14" r="1.6" fill="#fff"/><circle cx="15" cy="20" r="1.6" fill="#fff"/><circle cx="15" cy="26" r="1.6" fill="#fff"/>
+      </svg>
+
+      <!-- Nota musical -->
+      <svg class="floaty floaty--2" width="34" height="34" viewBox="0 0 24 24" fill="none">
+        <path d="M9 18V5l12-2v13" stroke="#0FA9C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="6" cy="18" r="3" fill="#0FA9C4"/><circle cx="18" cy="16" r="3" fill="#0FA9C4"/>
+      </svg>
+
+      <!-- Caja vallenata -->
+      <svg class="floaty floaty--3" width="42" height="42" viewBox="0 0 48 48" fill="none">
+        <ellipse cx="24" cy="10" rx="14" ry="5" fill="#FBE9CE"/>
+        <path d="M10 10c0 0-2 18 0 26 1 3 27 3 28 0 2-8 0-26 0-26" fill="#D1352E"/>
+        <ellipse cx="24" cy="36" rx="14" ry="5" fill="#8C241F"/>
+        <path d="M11 15h26M11 21h26M11 27h26" stroke="#8C241F" stroke-width="1.4" opacity=".5"/>
+      </svg>
+
+      <div class="hero__fade" aria-hidden="true"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy" data-animate="up">
+        <span class="party-badge">
+          <span class="party-badge__dot"></span>
+          Candidato a la Asamblea del Cesar · Pacto Histórico
+        </span>
+        <p class="script-tag">Valledupar nos une</p>
+        <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 16C24 6 44 20 64 10C82 2 96 14 106 8" stroke="#FF8A3D" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <h1 class="hero__title">
+          Porque un mejor <span class="text-accent">Cesar</span><br>
+          sí es <em>posible</em>.
+        </h1>
+        <p class="hero__desc">
+          Un proyecto de vida al servicio de nuestra gente, desde el pie de monte de la
+          Sierra Nevada hasta las orillas del río Cesar: educación, trabajo, seguridad
+          y oportunidades para los 25 municipios del departamento.
+        </p>
+        <div class="hero__cta">
+          <a href="#propuestas" class="btn btn--primary">
+            Conoce mi propuesta
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#historia" class="btn btn--ghost">Conóceme</a>
+        </div>
+
+        <div class="hero__stats" id="statsRow">
+          <div class="stat">
+            <span class="stat__num" data-count="25">0</span>
+            <span class="stat__label">Municipios<br>recorridos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="120">0</span>
+            <span class="stat__label">Veredas y barrios<br>visitados</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="8">0</span>
+            <span class="stat__label">Años de<br>liderazgo social</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media" data-animate="fade">
+        <div class="hero__photo-wrap">
+          <img class="hero__photo" src="public/candidato.png" alt="Daniel Vega, candidato a la Asamblea del Cesar" loading="eager">
+          <span class="hero__photo-name">Daniel Vega</span>
+          <span class="photo-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            Candidato · Valledupar, Cesar
+          </span>
+        </div>
+        <p class="script-tag script-tag--float">La gente<br>primero</p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="seam">
+    <span class="seam__icon seam__icon--left"><svg width="26" height="26" viewBox="0 0 100 100" fill="none"><path d="M50 14c-9 6-15 15-15 26 4-3 8-6 11-10-1 7-4 13-10 19 8 2 16-1 21-7 2 5 6 9 12 11-3-6-4-12-2-19 4 3 8 4 13 3-6-4-11-10-13-17-3-8-9-14-17-16Z" fill="#0B6FB8"/></svg></span>
+    <svg class="river-divider" viewBox="0 0 1400 64" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 32c80 0 80-22 160-22s80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22"/>
+    </svg>
+    <span class="seam__icon seam__icon--right"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="#0FA9C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" fill="#0FA9C4"/><circle cx="18" cy="16" r="3" fill="#0FA9C4"/></svg></span>
+  </div>
+
+  <!-- ===================== MI HISTORIA ===================== -->
+  <section class="historia" id="historia">
+    <div class="container historia__inner">
+      <div class="historia__media" data-animate="left">
+        <div class="historia__collage">
+          <div class="historia__media__frame historia__media__frame--main historia__media__frame--candidate">
+            <img src="public/candidato.png" alt="Daniel Vega, candidato a la Asamblea del Cesar" loading="lazy">
+            <span class="photo-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              Daniel Vega
+            </span>
+          </div>
+          <div class="historia__media__frame historia__media__frame--sm">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Alfonso_Lopez_Valledupar.JPG?width=500" alt="Plaza Alfonso López, Valledupar" loading="lazy">
+            <span class="photo-tag photo-tag--sm">Valledupar</span>
+          </div>
+          <div class="historia__media__frame historia__media__frame--sm">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo_Guatapur%C3%AD,_Valledupar.JPG?width=500" alt="Río Guatapurí, Valledupar" loading="lazy">
+            <span class="photo-tag photo-tag--sm">Río Guatapurí</span>
+          </div>
+        </div>
+        <svg class="scribble" width="90" height="70" viewBox="0 0 90 70" fill="none" aria-hidden="true">
+          <path d="M4 8C24 2 44 2 58 14C72 26 40 34 30 48C20 62 60 66 86 52" stroke="#FF8A3D" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <svg class="accordion-sticker" width="52" height="52" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="10" y="8" width="10" height="32" rx="2" fill="#0B6FB8"/>
+          <rect x="28" y="8" width="10" height="32" rx="2" fill="#D1352E"/>
+          <rect x="19" y="12" width="10" height="6" fill="#FFF"/>
+          <rect x="19" y="20" width="10" height="6" fill="#FFF"/>
+          <rect x="19" y="28" width="10" height="6" fill="#FFF"/>
+        </svg>
+        <p class="script-tag script-tag--pin">Aquí estoy,<br>y quiero seguir<br>sumando.</p>
+      </div>
+
+      <div class="historia__copy" data-animate="right">
+        <p class="eyebrow">Mi historia</p>
+        <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 12C20 2 36 20 54 10C72 0 92 16 106 6" stroke="#D1352E" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <h2 class="section-title">Soy un hijo del Cesar,<br>como tú.</h2>
+
+        <ul class="historia__timeline">
+          <li>
+            <span class="historia__timeline-icon" style="--ic1:#D1352E;--ic-soft:rgba(209,53,46,.12)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 11.5 12 4l9 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <strong>Mis raíces</strong>
+              <p>Nací y crecí en el barrio La Nevada, en Valledupar. Soy hijo de una maestra y un transportador; aprendí desde niño que el esfuerzo y la comunidad sostienen esta tierra.</p>
+            </div>
+          </li>
+          <li>
+            <span class="historia__timeline-icon" style="--ic1:#0B6FB8;--ic-soft:rgba(11,111,184,.12)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Z" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <strong>Mi formación</strong>
+              <p>Estudié Derecho en la Universidad Popular del Cesar, porque creo en la justicia como herramienta de cambio.</p>
+            </div>
+          </li>
+          <li>
+            <span class="historia__timeline-icon" style="--ic1:#E8A400;--ic-soft:rgba(232,164,0,.14)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="12" rx="2" fill="currentColor" opacity=".55"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <div>
+              <strong>Mi trayectoria</strong>
+              <p>Durante ocho años acompañé juntas de acción comunal, colectivos culturales y comités agropecuarios en distintos municipios del departamento.</p>
+            </div>
+          </li>
+          <li>
+            <span class="historia__timeline-icon" style="--ic1:#0FA9C4;--ic-soft:rgba(15,169,196,.12)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2.2 4.5 5.7 4c2.1-.3 4 .8 6.3 3 2.3-2.2 4.2-3.3 6.3-3 3.5.5 5.2 4 3.7 7.7C19.5 16.4 12 21 12 21Z" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <strong>Mi compromiso</strong>
+              <p>Me sumé al proyecto de cambio del Pacto Histórico porque creo que "Colombia puede" empieza por un Cesar que escucha primero a su gente.</p>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#propuestas" class="btn btn--primary">Conoce mis propuestas</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam">
+    <span class="seam__icon seam__icon--left">
+      <svg width="30" height="30" viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="10" height="32" rx="2" fill="#0B6FB8"/><rect x="28" y="8" width="10" height="32" rx="2" fill="#D1352E"/><rect x="19" y="14" width="10" height="6" fill="#FFF"/><rect x="19" y="24" width="10" height="6" fill="#FFF"/></svg>
+    </span>
+    <svg class="river-divider" viewBox="0 0 1400 64" preserveAspectRatio="none" aria-hidden="true" style="color:var(--gold)">
+      <path d="M0 40c70-20 90-20 160 0s90 20 160 0 90-20 160 0 90 20 160 0 90-20 160 0 90 20 160 0 90-20 160 0 90 20 160 0"/>
+    </svg>
+    <span class="seam__icon seam__icon--right">
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="16" fill="#E8A400"/><g stroke="#FF8A3D" stroke-width="5" stroke-linecap="round"><line x1="50" y1="10" x2="50" y2="24"/><line x1="50" y1="76" x2="50" y2="90"/><line x1="10" y1="50" x2="24" y2="50"/><line x1="76" y1="50" x2="90" y2="50"/></g></svg>
+    </span>
+  </div>
+
+  <!-- ===================== PROPUESTAS ===================== -->
+  <section class="propuestas" id="propuestas">
+    <div class="propuestas__blobs" aria-hidden="true"><span class="pattern-patch pattern-patch--sm pattern-patch--4"><svg viewBox="0 0 200 200"><rect width="200" height="200" fill="url(#patCrossGold)"/></svg></span></div>
+    <div class="container">
+      <div class="propuestas__copy" data-animate="up">
+        <p class="eyebrow">Propuestas</p>
+        <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 16C24 6 44 20 64 10C82 2 96 14 106 8" stroke="#FF8A3D" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <h2 class="section-title">Soluciones reales<br>para nuestra gente.</h2>
+        <p class="propuestas__text">
+          Estas son las seis líneas de trabajo, ya desglosadas, para construir un Cesar
+          más justo, seguro y con más oportunidades para todos.
+        </p>
+      </div>
+
+      <div class="propuestas__grid" id="propuestasGrid" data-animate="up">
+        <article class="prop-card">
+          <span class="prop-card__icon" style="--ic1:#0B6FB8;--ic-soft:rgba(11,111,184,.12)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Z" fill="currentColor"/><path d="M5 10.18v4.5C5 17.5 8.13 19 12 19s7-1.5 7-4.32v-4.5l-7 3.18-7-3.18Z" fill="currentColor" opacity=".55"/></svg>
+          </span>
+          <span class="prop-card__title">Educación con futuro</span>
+          <ul class="prop-card__list">
+            <li>Mejoramiento de infraestructura en escuelas rurales de los 25 municipios.</li>
+            <li>Conectividad a internet gratuita para instituciones educativas públicas.</li>
+            <li>Becas universitarias y técnicas para jóvenes de bajos recursos.</li>
+            <li>Fortalecimiento de la educación bilingüe y técnica agropecuaria.</li>
+          </ul>
+        </article>
+
+        <article class="prop-card">
+          <span class="prop-card__icon" style="--ic1:#D1352E;--ic-soft:rgba(209,53,46,.12)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2.2 4.5 5.7 4c2.1-.3 4 .8 6.3 3 2.3-2.2 4.2-3.3 6.3-3 3.5.5 5.2 4 3.7 7.7C19.5 16.4 12 21 12 21Z" fill="currentColor"/></svg>
+          </span>
+          <span class="prop-card__title">Salud digna y cercana</span>
+          <ul class="prop-card__list">
+            <li>Ambulancias y brigadas médicas permanentes para zonas rurales.</li>
+            <li>Reducción de tiempos de espera en centros de salud municipales.</li>
+            <li>Programas de salud mental y prevención en comunidades vulnerables.</li>
+            <li>Dotación de equipos médicos para hospitales de segundo nivel.</li>
+          </ul>
+        </article>
+
+        <article class="prop-card">
+          <span class="prop-card__icon" style="--ic1:#E8A400;--ic-soft:rgba(232,164,0,.14)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="12" rx="2" fill="currentColor" opacity=".55"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <span class="prop-card__title">Trabajo y oportunidades</span>
+          <ul class="prop-card__list">
+            <li>Alianzas con empresas privadas para primer empleo juvenil.</li>
+            <li>Apoyo a emprendimientos rurales y economía popular.</li>
+            <li>Formación técnica gratuita en oficios con alta demanda laboral.</li>
+            <li>Fondo departamental de microcréditos para mujeres cabeza de familia.</li>
+          </ul>
+        </article>
+
+        <article class="prop-card">
+          <span class="prop-card__icon" style="--ic1:#1FAA59;--ic-soft:rgba(31,170,89,.12)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z" fill="currentColor"/></svg>
+          </span>
+          <span class="prop-card__title">Seguridad y convivencia</span>
+          <ul class="prop-card__list">
+            <li>Iluminación LED y cámaras en barrios y veredas priorizadas.</li>
+            <li>Programas de convivencia y resolución pacífica de conflictos.</li>
+            <li>Fortalecimiento de las redes comunitarias de seguridad.</li>
+            <li>Rutas rápidas de atención para mujeres víctimas de violencia.</li>
+          </ul>
+        </article>
+
+        <article class="prop-card">
+          <span class="prop-card__icon" style="--ic1:#0FA9C4;--ic-soft:rgba(15,169,196,.12)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" fill="currentColor"/><circle cx="18" cy="16" r="3" fill="currentColor"/></svg>
+          </span>
+          <span class="prop-card__title">Cultura y música vallenata</span>
+          <ul class="prop-card__list">
+            <li>Apoyo económico a escuelas de acordeón y semilleros musicales.</li>
+            <li>Respaldo permanente al Festival de la Leyenda Vallenata y a los festivales veredales.</li>
+            <li>Circuito departamental de artistas y gestores culturales.</li>
+            <li>Recuperación de espacios públicos junto al río Guatapurí para la música en vivo.</li>
+          </ul>
+        </article>
+
+        <article class="prop-card">
+          <span class="prop-card__icon" style="--ic1:#FF8A3D;--ic-soft:rgba(255,138,61,.14)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2C9 6 8 9 8 12a4 4 0 0 0 8 0c0-3-1-6-4-10Z" fill="currentColor"/><path d="M12 22v-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <span class="prop-card__title">Campo y desarrollo rural</span>
+          <ul class="prop-card__list">
+            <li>Mejoramiento de vías terciarias para sacar las cosechas a tiempo.</li>
+            <li>Asistencia técnica gratuita para pequeños productores.</li>
+            <li>Distritos de riego para enfrentar las sequías del Cesar.</li>
+            <li>Comercialización directa entre el campo y los mercados urbanos.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam">
+    <span class="seam__icon seam__icon--left">
+      <svg width="28" height="24" viewBox="0 0 48 40" fill="none"><path d="M4 36 L18 10 L28 26 L34 16 L44 36 Z" fill="#1FAA59" opacity=".85"/></svg>
+    </span>
+    <svg class="river-divider" viewBox="0 0 1400 64" preserveAspectRatio="none" aria-hidden="true" style="color:var(--blue-2)">
+      <path d="M0 44c60-24 100-24 160 0s100 24 160 0 100-24 160 0 100 24 160 0 100-24 160 0 100 24 160 0 100-24 160 0 100 24 160 0"/>
+    </svg>
+    <span class="seam__icon seam__icon--right">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C9 6 8 9 8 12a4 4 0 0 0 8 0c0-3-1-6-4-10Z" fill="#FF8A3D"/><path d="M12 22v-8" stroke="#FF8A3D" stroke-width="2" stroke-linecap="round"/></svg>
+    </span>
+  </div>
+
+  <!-- ===================== TERRITORIO ===================== -->
+  <section class="territorio" id="territorio">
+    <div class="container territorio__inner">
+      <div class="territorio__copy" data-animate="left">
+        <p class="eyebrow">El territorio</p>
+        <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 10C18 20 34 2 52 12C70 22 86 4 106 14" stroke="#0B6FB8" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <h2 class="section-title">Un Cesar para<br>todos los municipios.</h2>
+        <p class="territorio__text">
+          Desde el pie de monte de la Sierra Nevada hasta las orillas del río Cesar:
+          del corregimiento más apartado a la capital, escuchamos, dialogamos y
+          construimos junto a cada comunidad de los 25 municipios del departamento.
+        </p>
+        <button class="btn btn--primary" id="explorarMapaBtn">
+          Explorar el mapa
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="map-legend">
+          <span><i class="map-legend__star"></i> Capital</span>
+          <span><i class="map-legend__dot"></i> Municipio con propuesta</span>
+          <span><i class="map-legend__ghost"></i> Otros municipios</span>
+        </div>
+      </div>
+
+      <div class="territorio__map" data-animate="right">
+        <div class="map-frame">
+          <span class="map-compass">N ↑</span>
+          <svg viewBox="0 0 420 460" class="map-svg" id="mapSvg" aria-label="Mapa ilustrativo del departamento del Cesar">
+            <path class="map-shape" d="M120 20 L260 10 L320 70 L360 150 L340 230 L380 300 L330 400 L230 450 L140 420 L90 340 L110 260 L60 190 L90 110 Z"/>
+            <path class="map-shape map-shape--alt" d="M120 20 L200 40 L230 120 L190 200 L220 280 L170 360 L140 420 L90 340 L110 260 L60 190 L90 110 Z"/>
+
+            <!-- Sierra Nevada (NO) -->
+            <g class="map-relief" transform="translate(84,44)">
+              <path d="M0 26 L14 0 L26 26 Z"/>
+              <path d="M16 26 L30 4 L44 26 Z"/>
+            </g>
+            <!-- Serranía del Perijá (E) -->
+            <g class="map-relief map-relief--alt" transform="translate(328,150)">
+              <path d="M0 30 L10 4 L20 30 Z"/>
+              <path d="M12 34 L22 10 L32 34 Z"/>
+              <path d="M24 40 L34 16 L44 40 Z"/>
+            </g>
+
+            <!-- Río Cesar -->
+            <path class="map-river" d="M205 24c-10 40 25 55 15 95s-40 45-25 90 10 60-5 90-15 70 5 110"/>
+
+            <g class="map-pin map-pin--capital" data-mun="valledupar" transform="translate(190,148)">
+              <title>Valledupar — capital del departamento</title>
+              <path d="M0 -11 L2.6 -3.4 L10.5 -3.4 L4.1 1.3 L6.5 9 L0 4.2 L-6.5 9 L-4.1 1.3 L-10.5 -3.4 L-2.6 -3.4 Z"/>
+            </g>
+            <g class="map-pin" data-mun="bosconia" transform="translate(138,232)"><title>Bosconia</title><circle r="7" style="animation-delay:.2s"/></g>
+            <g class="map-pin" data-mun="aguachica" transform="translate(262,382)"><title>Aguachica</title><circle r="7" style="animation-delay:.4s"/></g>
+            <g class="map-pin" data-mun="codazzi" transform="translate(298,142)"><title>Agustín Codazzi</title><circle r="7" style="animation-delay:.6s"/></g>
+            <g class="map-pin" data-mun="curumani" transform="translate(228,300)"><title>Curumaní</title><circle r="7" style="animation-delay:.8s"/></g>
+            <g class="map-pin map-pin--ghost" data-mun="lajagua" transform="translate(312,218)"><title>La Jagua de Ibirico</title><circle r="5"/></g>
+            <g class="map-pin map-pin--ghost" data-mun="chiriguana" transform="translate(280,258)"><title>Chiriguaná</title><circle r="5"/></g>
+          </svg>
+        </div>
+
+        <div class="map-panel" id="mapPanel">
+          <strong id="mapPanelTitle">Valledupar</strong>
+          <span id="mapPanelDesc">Renovación de 40 barrios y las comunas del centro.</span>
+        </div>
+
+        <div class="map-chips">
+          <button class="map-chip is-active" data-mun="valledupar" data-title="Valledupar" data-desc="Renovación de 40 barrios y las comunas del centro.">Valledupar</button>
+          <button class="map-chip" data-mun="bosconia" data-title="Bosconia" data-desc="Doble calzada y conectividad con la Ruta del Sol.">Bosconia</button>
+          <button class="map-chip" data-mun="aguachica" data-title="Aguachica" data-desc="Impulso agroindustrial y comercial en el sur del Cesar.">Aguachica</button>
+          <button class="map-chip" data-mun="codazzi" data-title="Agustín Codazzi" data-desc="Diálogo social permanente en la zona minera.">Agustín Codazzi</button>
+          <button class="map-chip" data-mun="curumani" data-title="Curumaní" data-desc="Vías terciarias para sacar la cosecha a tiempo.">Curumaní</button>
+          <button class="map-chip map-chip--ghost" data-mun="lajagua" data-title="La Jagua de Ibirico" data-desc="Mesa permanente de diálogo minero-ambiental.">La Jagua de Ibirico</button>
+          <button class="map-chip map-chip--ghost" data-mun="chiriguana" data-title="Chiriguaná" data-desc="Mejoramiento de la vía que conecta con la Ruta del Sol.">Chiriguaná</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam">
+    <span class="seam__icon seam__icon--left">
+      <svg width="24" height="26" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="10" rx="14" ry="5" fill="#FBE9CE"/><path d="M10 10c0 0-2 18 0 26 1 3 27 3 28 0 2-8 0-26 0-26" fill="#D1352E"/><ellipse cx="24" cy="36" rx="14" ry="5" fill="#8C241F"/></svg>
+    </span>
+    <svg class="river-divider" viewBox="0 0 1400 64" preserveAspectRatio="none" aria-hidden="true" style="color:var(--red)">
+      <path d="M0 36c60 22 100 22 160 0s100-22 160 0 100 22 160 0 100-22 160 0 100 22 160 0 100-22 160 0 100 22 160 0 100-22 160 0"/>
+    </svg>
+    <span class="seam__icon seam__icon--right">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2.2 4.5 5.7 4c2.1-.3 4 .8 6.3 3 2.3-2.2 4.2-3.3 6.3-3 3.5.5 5.2 4 3.7 7.7C19.5 16.4 12 21 12 21Z" fill="#0FA9C4"/></svg>
+    </span>
+  </div>
+
+  <!-- ===================== HISTORIAS REALES ===================== -->
+  <section class="historias" id="historias-reales">
+    <div class="container historias__inner">
+      <div class="historias__video" data-animate="left">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo_Guatapur%C3%AD,_Valledupar.JPG?width=900" alt="Río Guatapurí a su paso por Valledupar" loading="lazy">
+        <button class="play-btn" id="playVideoBtn" aria-label="Escuchar el testimonio de Rosa Elena">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 5v14l12-7L7 5Z" fill="currentColor"/></svg>
+        </button>
+        <span class="photo-tag" style="left:auto;right:14px">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+          Río Guatapurí, Valledupar
+        </span>
+        <p class="script-tag script-tag--dark">Gente real,<br>problemas reales,<br>soluciones posibles.</p>
+      </div>
+
+      <div class="historias__copy" data-animate="right">
+        <p class="eyebrow">Historias reales</p>
+        <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 14C20 4 36 22 54 12C72 2 90 18 106 8" stroke="#D1352E" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <h2 class="section-title">La fuerza de<br>nuestra gente.</h2>
+        <p class="historias__text">
+          Detrás de cada barrio hay una historia. Aquí compartimos algunas de las voces
+          que inspiran este proyecto.
+        </p>
+
+        <div class="testi-list">
+          <div class="testi">
+            <img src="https://picsum.photos/seed/vecina-rosa/100/100" alt="">
+            <div>
+              <p>“Daniel fue el único que volvió después de las elecciones pasadas a preguntar cómo íbamos con el acueducto.”</p>
+              <span>Rosa Elena · Vereda La Mesa, Valledupar</span>
+            </div>
+          </div>
+          <div class="testi">
+            <img src="https://picsum.photos/seed/vecino-jairo/100/100" alt="">
+            <div>
+              <p>“Nos sentamos con él tres veces antes de armar la propuesta agrícola. De verdad escucha.”</p>
+              <span>Jairo Luna · Asociación de paneleros, Aguachica</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn--outline">Ver historias</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOTICIAS ===================== -->
+  <section class="noticias" id="noticias">
+    <div class="container">
+      <div class="noticias__head" data-animate="up">
+        <div>
+          <p class="eyebrow">Noticias</p>
+          <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 8C22 18 38 2 56 12C74 22 90 6 106 16" stroke="#0FA9C4" stroke-width="3.5" stroke-linecap="round"/></svg>
+          <h2 class="section-title">Noticias y novedades</h2>
+        </div>
+        <a href="#" class="link-more">Ver todas <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="noticias__grid" data-animate="up">
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Alfonso_Lopez_Valledupar.JPG?width=700" alt="Plaza Alfonso López, punto de encuentro en el centro de Valledupar" loading="lazy">
+            <span class="tag tag--orange">Juventud</span>
+          </div>
+          <h3>Avanzan los diálogos con jóvenes del Cesar</h3>
+          <p class="news-card__excerpt">Estudiantes de la Unicesar y la UPC se reunieron con Daniel Vega para hablar de empleo y becas.</p>
+          <time datetime="2026-08-12">12 de agosto de 2026</time>
+        </article>
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Llanuras_del_Cesar_Sierra_Nevada_de_Santa_Marta.jpg?width=700" alt="Llanuras del Cesar con la Sierra Nevada de Santa Marta al fondo" loading="lazy">
+            <span class="tag tag--teal">Territorio</span>
+          </div>
+          <h3>Visita a las veredas del sur del departamento</h3>
+          <p class="news-card__excerpt">Recorrido por corregimientos de Aguachica y Curumaní para escuchar a las juntas de acción comunal.</p>
+          <time datetime="2026-07-30">30 de julio de 2026</time>
+        </article>
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Llanuras_del_Cesar_Sierra_Nevada_de_Santa_Marta.jpg?width=700" alt="Zona rural del Cesar donde se ubican escuelas veredales" loading="lazy">
+            <span class="tag tag--blue">Propuestas</span>
+          </div>
+          <h3>Educación rural, la clave para el futuro del Cesar</h3>
+          <p class="news-card__excerpt">Presentamos el plan de conectividad e infraestructura para escuelas rurales de los 25 municipios.</p>
+          <time datetime="2026-07-08">8 de julio de 2026</time>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam">
+    <span class="seam__icon seam__icon--left">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="#E8A400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" fill="#E8A400"/><circle cx="18" cy="16" r="3" fill="#E8A400"/></svg>
+    </span>
+    <svg class="river-divider" viewBox="0 0 1400 64" preserveAspectRatio="none" aria-hidden="true" style="color:var(--blue)">
+      <path d="M0 32c80 0 80-22 160-22s80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22"/>
+    </svg>
+    <span class="seam__icon seam__icon--right">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#0B6FB8" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="#0B6FB8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+  </div>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="contacto" id="contacto">
+    <div class="contacto__blobs" aria-hidden="true">
+      <span class="pattern-patch pattern-patch--sm pattern-patch--5"><svg viewBox="0 0 200 200"><rect width="200" height="200" fill="url(#patDotsRed)"/></svg></span>
+      <span class="pattern-patch pattern-patch--sm pattern-patch--6"><svg viewBox="0 0 200 200"><rect width="200" height="200" fill="url(#patStripesTeal)"/></svg></span>
+    </div>
+    <div class="container contacto__inner">
+      <div class="contacto__copy" data-animate="left">
+        <p class="eyebrow">Conversemos</p>
+        <svg class="doodle" width="90" height="20" viewBox="0 0 110 24" fill="none" aria-hidden="true"><path d="M4 12C20 2 36 20 54 10C72 0 92 16 106 6" stroke="#E8A400" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <h2 class="section-title">Tu voz también<br>construye.</h2>
+        <p class="contacto__text">
+          ¿Tienes una propuesta, una inquietud o quieres sumarte a la campaña?
+          Escríbeme, con gusto te leo.
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="cf-name" name="name" placeholder=" " required>
+            <label for="cf-name">Nombre completo</label>
+          </div>
+          <div class="field">
+            <input type="email" id="cf-email" name="email" placeholder=" " required>
+            <label for="cf-email">Correo electrónico</label>
+          </div>
+          <div class="field">
+            <textarea id="cf-msg" name="msg" rows="3" placeholder=" " required></textarea>
+            <label for="cf-msg">Tu mensaje</label>
+          </div>
+          <button type="submit" class="btn btn--primary">
+            Enviar mensaje
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-success" id="formSuccess" role="status">¡Gracias! Tu mensaje fue recibido, te contactaremos pronto.</p>
+        </form>
+      </div>
+
+      <div class="contacto__card" data-animate="right">
+        <a class="contact-item" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+          <span class="contact-item__icon" style="--ic1:#1FAA59;--ic-soft:rgba(31,170,89,.12)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.6-1.2 1.2-1.7 1.3-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+          </span>
+          <span><strong>WhatsApp</strong><small>Escríbeme directo</small></span>
+        </a>
+        <a class="contact-item" href="mailto:contacto@danielvegacesar.co">
+          <span class="contact-item__icon" style="--ic1:#0B6FB8;--ic-soft:rgba(11,111,184,.12)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span><strong>Correo</strong><small>contacto@danielvegacesar.co</small></span>
+        </a>
+        <div class="contact-item contact-item--social">
+          <span class="contact-item__icon" style="--ic1:#FF8A3D;--ic-soft:rgba(255,138,61,.14)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9 9 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 22 12c0-5.5-4.5-10-10-10Z"/></svg>
+          </span>
+          <span>
+            <strong>Redes sociales</strong>
+            <div class="social-row">
+              <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.9.2-1.5 1.5-1.5h1.6V4.2C15.8 4.1 14.8 4 13.7 4c-2.4 0-4.1 1.5-4.1 4.2v2.1H7v3h2.6V21h3.9Z"/></svg></a>
+              <a href="#" aria-label="X (Twitter)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h4.8l4 5.6L16.6 3H21l-6.7 8.2L21.3 21h-4.8l-4.4-6.1L6.6 21H2.2l7.1-8.6L3 3Z"/></svg></a>
+              <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.5v5l4.5-2.5L10 9.5Z"/></svg></a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="seam">
+  <span class="seam__icon seam__icon--left">
+    <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="16" fill="#E8A400"/><g stroke="#FF8A3D" stroke-width="5" stroke-linecap="round"><line x1="50" y1="10" x2="50" y2="24"/><line x1="50" y1="76" x2="50" y2="90"/><line x1="10" y1="50" x2="24" y2="50"/><line x1="76" y1="50" x2="90" y2="50"/></g></svg>
+  </span>
+  <svg class="river-divider" viewBox="0 0 1400 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 32c80 0 80-22 160-22s80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22 80 22 160 22 80-22 160-22"/>
+  </svg>
+  <span class="seam__icon seam__icon--right">
+    <svg width="26" height="26" viewBox="0 0 100 100" fill="none"><path d="M50 14c-9 6-15 15-15 26 4-3 8-6 11-10-1 7-4 13-10 19 8 2 16-1 21-7 2 5 6 9 12 11-3-6-4-12-2-19 4 3 8 4 13 3-6-4-11-10-13-17-3-8-9-14-17-16Z" fill="#0B6FB8"/></svg>
+  </span>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#inicio" class="brand brand--footer">
+        <img class="brand__logo" src="public/pacto.png" alt="Pacto Histórico · Colombia puede" width="702" height="355">
+      </a>
+      <p class="script-tag script-tag--footer">Juntos por<br>un mejor Cesar</p>
+    </div>
+
+    <nav class="footer__nav">
+      <a href="#inicio" data-nav>Inicio</a>
+      <a href="#historia" data-nav>Mi historia</a>
+      <a href="#noticias" data-nav>Noticias</a>
+      <a href="#propuestas" data-nav>Propuestas</a>
+      <a href="#contacto" data-nav>Contacto</a>
+    </nav>
+
+    <div class="footer__social">
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.9.2-1.5 1.5-1.5h1.6V4.2C15.8 4.1 14.8 4 13.7 4c-2.4 0-4.1 1.5-4.1 4.2v2.1H7v3h2.6V21h3.9Z"/></svg></a>
+      <a href="#" aria-label="X (Twitter)"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h4.8l4 5.6L16.6 3H21l-6.7 8.2L21.3 21h-4.8l-4.4-6.1L6.6 21H2.2l7.1-8.6L3 3Z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.5v5l4.5-2.5L10 9.5Z"/></svg></a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>Pacto Histórico · Candidatura de Daniel Vega a la Asamblea del Cesar, 2026.</span>
+    <span>Sitio de demostración — datos ficticios. Fotografías de lugares: Wikimedia Commons (CC BY-SA).</span>
+  </div>
+</footer>
+
+<!-- Floating actions -->
+<a class="fab fab--whatsapp" href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.6-1.2 1.2-1.7 1.3-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+</a>
+<button class="fab fab--top" id="backToTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ===================== MODALES ===================== -->
+
+<div class="modal-overlay" id="videoOverlay">
+  <div class="modal modal--video" role="dialog" aria-modal="true" aria-label="Testimonio de Rosa Elena">
+    <button class="modal__close" id="videoClose" aria-label="Cerrar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="audio-testi">
+      <img class="audio-testi__photo" src="https://picsum.photos/seed/vecina-rosa/140/140" alt="">
+      <strong class="audio-testi__name">Rosa Elena</strong>
+      <span class="audio-testi__place">Vereda La Mesa, Valledupar</span>
+
+      <button class="audio-testi__play" id="audioPlayBtn" aria-label="Reproducir testimonio">
+        <svg class="audio-testi__icon audio-testi__icon--play" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 5v14l12-7L7 5Z" fill="currentColor"/></svg>
+        <svg class="audio-testi__icon audio-testi__icon--pause" width="20" height="20" viewBox="0 0 24 24" fill="none" hidden><path d="M7 5h3v14H7zM14 5h3v14h-3z" fill="currentColor"/></svg>
+      </button>
+
+      <div class="audio-testi__wave" id="audioWave">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <p class="audio-testi__caption">"Yo vivo en la vereda La Mesa, cerca de Valledupar. Durante años pedimos que arreglaran el acueducto y nadie volvía después de las elecciones. Daniel fue diferente: volvió, se sentó con nosotros, y ahora estamos viendo los primeros arreglos. Por eso confío en él para la Asamblea del Cesar."</p>
+      <p class="audio-testi__note" id="audioNote" hidden>Tu navegador no permite reproducir voz aquí — te dejamos el testimonio en texto arriba.</p>
+      <p class="audio-testi__disclaimer">Testimonio ficticio, narrado con voz sintetizada del navegador.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
