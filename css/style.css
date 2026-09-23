@@ -1,29 +1,31 @@
 /* ============ TOKENS ============ */
 :root{
-  --blue:#0B6FB8;
-  --blue-2:#5AA6E0;
-  --blue-soft:#E4F1FB;
-  --orange:#FF8A3D;
-  --orange-soft:#FFEEE0;
-  --gold:#E8A400;
-  --gold-soft:#FFF6DE;
-  --teal:#0FA9C4;
-  --teal-soft:#E2F8FC;
-  --green:#1FAA59;
-  --red:#D1352E;
-  --red-soft:#FBE7E5;
-  --light-bg:#FAF9FD;
-  --line:#E6EBF3;
-  --ink:#171A34;
-  --muted:#666B93;
-  --muted-2:#9A9FC4;
+  --blue:#2a3884;
+  --blue-2:#4b5aa4;
+  --blue-soft:#e8ebff;
+  --orange:#fd9220;
+  --orange-soft:#fff1e2;
+  --gold:#fd9220;
+  --gold-soft:#fff1e2;
+  --teal:#35a84a;
+  --teal-soft:#eafaf0;
+  --green:#35a84a;
+  --red:#ea2025;
+  --red-soft:#ffe6e6;
+  --purple:#8f3292;
+  --purple-soft:#f5e8f7;
+  --light-bg:#f9f7fb;
+  --line:#ebebf3;
+  --ink:#1d2340;
+  --muted:#585f7e;
+  --muted-2:#8a8ea9;
   --white:#FFFFFF;
-  --shadow-lg:0 24px 60px -24px rgba(23,26,52,.18);
-  --shadow-sm:0 10px 26px -16px rgba(23,26,52,.16);
+  --shadow-lg:0 24px 60px -24px rgba(42,56,132,.18);
+  --shadow-sm:0 10px 26px -16px rgba(42,56,132,.16);
   --radius:20px;
-  --ff-head:'Poppins',sans-serif;
-  --ff-body:'Inter',sans-serif;
-  --ff-script:'Caveat',cursive;
+  --ff-head:'LEMON MILK','Montserrat',sans-serif;
+  --ff-body:'Montserrat',sans-serif;
+  --ff-script:'Montserrat',sans-serif;
   --header-h:76px;
 }
 
@@ -52,7 +54,7 @@ h1,h2,h3{font-family:var(--ff-head);line-height:1.15}
 }
 
 /* ============ UTIL ============ */
-.script-tag{font-family:var(--ff-script);font-size:1.5rem;font-weight:600;color:var(--blue);line-height:1.2}
+.script-tag{font-family:var(--ff-body);font-size:1.5rem;font-weight:600;color:var(--blue);line-height:1.2}
 .eyebrow{font-family:var(--ff-head);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .eyebrow::before{content:"";width:20px;height:2px;background:currentColor;border-radius:2px}
 .section-title{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:700;color:var(--ink);margin-bottom:18px;overflow:hidden}
